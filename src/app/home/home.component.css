@@ -1,0 +1,46 @@
+/* From Uiverse.io by SelfMadeSystem */ 
+.Home {
+  width: 100%;
+  height: 100vh;
+  --s: 6em;
+  --d: 0.3em;
+  --bg: #232228;
+  --fg: rgb(90, 92, 102);
+  background-color: var(--bg);
+  background-image: radial-gradient(
+      var(--d) var(--d) at 25% 25%,
+      var(--fg) 100%,
+      transparent 100%
+    ),
+    radial-gradient(
+      var(--d) var(--d) at 75% 75%,
+      var(--fg) 100%,
+      transparent 100%
+    );
+  background-size: var(--s) calc(var(--s) * 0.577350269);
+}
+
+
+
+
+
+
+.infos .subtitle {
+  margin-bottom: 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+ .infos .title {
+  margin-bottom: 0px;
+  font-size: 74px;
+  font-weight: bold;
+}
+
+ .infos p {
+  margin-top: -5px;
+  font-size: 22px;
+}
+
+
+
