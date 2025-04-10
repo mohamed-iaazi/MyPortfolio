@@ -1,0 +1,17 @@
+.about-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    min-height: 90vh;
+  }
+  .about-img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  .about-text h2 {
+    font-weight: bold;
+  }
+  .about-text p {
+    font-size: 1.1rem;
+    color: #555;
+  }
