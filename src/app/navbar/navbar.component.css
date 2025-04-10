@@ -44,3 +44,11 @@
   .switch input:checked + .slider:before {
     transform: translateX(1.5em);
   }
+
+  .active{
+
+    border-bottom: 3px solid #0974f1;
+    color: #0974f1;
+    width: 100px;
+    height: 20px;
+  }

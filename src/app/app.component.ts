@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component'; // Import the NavbarComponent
 import {FooterComponent} from './footer/footer.component';
 import { HomeComponent} from './home/home.component';
@@ -9,7 +9,7 @@ import { ProjetsComponent } from './projets/projets.component';
  
 @Component({
   selector: 'app-root',
-  imports: [RouterLink,RouterOutlet,NavbarComponent,FooterComponent,HomeComponent,AboutComponent,ContactComponent,ProjetsComponent], 
+  imports: [RouterLink, RouterLinkActive,RouterOutlet,NavbarComponent,FooterComponent,HomeComponent,AboutComponent,ContactComponent,ProjetsComponent], 
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
