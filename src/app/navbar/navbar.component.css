@@ -47,8 +47,24 @@
 
   .active{
 
-    border-bottom: 3px solid #0974f1;
+    border-bottom: 4px solid #0974f1;
+    border-radius: 1px;
     color: #0974f1;
-    width: 100px;
-    height: 20px;
+    width: fit-content;
+  
+    a {
+      color: #0974f1 !important;
+    }
+  }
+
+
+  @media screen and (max-width: 992px) {
+    a {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    
+    
   }
