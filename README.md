@@ -20,8 +20,17 @@ Bienvenue sur **MyPortfolio**, un site web professionnel réalisé avec **Angula
 ---
 
 ## 🖼️ Aperçu
+-Home
+![alt text](image.png)
 
+-About
+![alt text](image-1.png)
 
+-projects
+![alt text](image-2.png)
+
+-Contact
+![alt text](image-3.png)
 
 ## 🧱 Architecture du projet
 
