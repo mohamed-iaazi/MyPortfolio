@@ -1,59 +1,62 @@
-# Portfolio
+# 💼 MyPortfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+Bienvenue sur **MyPortfolio**, un site web professionnel réalisé avec **Angular 19**, conçu pour présenter mon parcours, mes compétences et mes projets. Ce portfolio permet aux visiteurs de découvrir mon univers tech, d'explorer mes réalisations, et de me contacter facilement.
 
-## Development server
+## ✨ Fonctionnalités principales
 
-To start a local development server, run:
+- **Page d'accueil** claire et professionnelle
+- **Présentation personnelle** : bio, photo, rôle
+- **Section "À propos"** : parcours, compétences, outils utilisés
+- **Liste de projets** : cartes interactives avec image, titre, description, lien GitHub/démo
+- **Filtrage de projets par technologie**
+- **Formulaire de contact** fonctionnel avec validation des champs
+- **Téléchargement du CV** au format PDF
+- **Navigation fluide** via une navbar avec ancres (Accueil, À propos, Projets, Contact, CV)
+- **Footer** avec raccourcis et copyright
+- **Bonus** :
+  - Mode sombre / clair 🌙☀️
+  - Site **multilingue** : 🇫🇷 / 🇬🇧
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🖼️ Aperçu
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
+## 🧱 Architecture du projet
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 📁 Composants Angular
 
-```bash
-ng generate --help
-```
+- `home` : Page d'accueil
+- `about` : Section à propos
+- `project` : Affichage des projets + filtrage
+- `cv` : Téléchargement du CV
+- `contact` : Formulaire de contact
+- `navbar` : Barre de navigation
+- `footer` : Pied de page
 
-## Building
+### 🛠️ Services
 
-To build the project run:
+- `ProjectService` : Gestion des données des projets
 
-```bash
-ng build
-```
+### 🧭 Modules
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- `AppRoutingModule` : Gestion des routes du site
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🧰 Technologies utilisées
 
-```bash
-ng test
-```
+- **Framework** : Angular 19
+- **Langage** : TypeScript, HTML, CSS
+- **UI Framework** :  Bootstrap
+- **Hébergement** : GitHub Pages
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 🚀 Lancer le projet en local
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. **Cloner le dépôt** :
+   ```bash
+   git clone hhttps://github.com/mohamed-iaazi/MyPortfolio.git
+   cd MyPortfolio
