@@ -6,16 +6,16 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent10">
 				<ul class="navbar-nav mx-auto my-2 my-lg-0">
 					<li class="nav-item d-flex align-items-center me-4" >	
-						<a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link"  routerLink="/" ><i class='bx bx-home'></i> Home</a>
+						<a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link"  routerLink="/"  (click) ="scrollTo('home')"><i class='bx bx-home'></i> Home</a>
 					</li>
                     <li class="nav-item d-flex align-items-center me-4" >
-                        <a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link"  routerLink="/about"><i class='bx bxs-info-square'></i> About</a>
+                        <a routerLinkActive="active"  class="nav-link"  routerLink="/about"  (click) ="scrollTo('about')"><i class='bx bxs-info-square'></i> About</a>
                     </li>
                     <li class="nav-item d-flex align-items-center me-4"  >
-                        <a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link" routerLink="/projets" ><i class='bx bxs-network-chart'></i> Projets</a>
+                        <a routerLinkActive="active" class="nav-link" routerLink="/projets" (click) ="scrollTo('projets')" ><i class='bx bxs-network-chart'></i> Projets</a>
                     </li>
                     <li class="nav-item d-flex align-items-center me-4"  >
-						<a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link"   routerLink="/contact" ><i class='bx bxs-contact'></i> Contact</a>
+						<a routerLinkActive="active"  class="nav-link"   routerLink="/contact" (click) ="scrollTo('contact')" ><i class='bx bxs-contact'></i> Contact</a>
 					</li>
 					
 				</ul>
@@ -24,8 +24,10 @@
 					<span class="slider"></span>
 				  </label>
 				  <i class='bx bxs-sun'></i>
-
 			</div>
 		</div>
 	</nav>
 </section>
+<button class="btn btn-primary  position-fixed bottom-0 end-0 m-3" (click)="scrollToTop()" id="scrollToTopBtn" >
+	<i class='bx bxs-to-top bx-tada text-light' ></i>
+</button>

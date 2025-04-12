@@ -8,6 +8,26 @@ import { RouterLink ,RouterLinkActive } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  
+
+  scrollTo(element:string) {
+
+  const t = document.getElementById(element);
+   t?.scrollIntoView({
+     behavior: 'smooth', 
+     block: 'start',
+     inline: 'nearest'
+     
+    });
+    
+  }
+
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  } 
 
   
 }
