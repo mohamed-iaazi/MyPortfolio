@@ -125,3 +125,7 @@ section{
   width: 100%;
   opacity: 0.8;
 }
+
+a{
+  text-decoration: none;
+}

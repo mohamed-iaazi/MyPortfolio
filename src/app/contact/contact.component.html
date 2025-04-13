@@ -1,24 +1,31 @@
 <!-- Contact Section -->
-<section class="py-5 bg-light  " id="contact">
- 
-      <h2 class="text-center section-title mb-5  text-dark pt-2">Contact Me</h2>
-      <div class="card ms-auto me-auto d-block">
-        <form class="form">
-          <div class="group">
-          <input placeholder="‎" type="text" required="">
-          <label for="name">Name</label>
-          </div>
-      <div class="group">
-          <input placeholder="‎" type="email" id="email" name="email" required="">
-          <label for="email">Email</label>
-          </div>
-      <div class="group">
-          <textarea placeholder="‎" id="comment" name="comment" rows="5" required=""></textarea>
-          <label for="comment">Comment</label>
-      </div>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
+<section class="py-5 bg-light" id="contact">
+  <h2 class="text-center section-title mb-5 text-dark pt-2">Contact Me</h2>
+  
+  <div class="card ms-auto me-auto d-block">
+    <!-- Reactive form setup -->
+    <form class="form" [formGroup]="messageForm" (ngSubmit)="onSubmit()">
       
-   
-  </section>
+      <!-- Name Field -->
+      <div class="group">
+        <input placeholder="‎" type="text" id="name" formControlName="name" required>
+        <label for="name">Name</label>
+      </div>
+
+      <!-- Email Field -->
+      <div class="group">
+        <input placeholder="‎" type="email" id="email" formControlName="email" required>
+        <label for="email">Email</label>
+      </div>
+
+      <!-- Message Field -->
+      <div class="group">
+        <textarea placeholder="‎" id="message" formControlName="message" rows="5" required></textarea>
+        <label for="message">Your Message</label>
+      </div>
+
+      <!-- Submit Button -->
+      <button class="btn btn-primary w-100" type="submit" [disabled]="!messageForm.valid">Send Message</button>
+    </form>
+  </div>
+</section>
