@@ -2,7 +2,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms'; // Import here
-
 import emailjs from '@emailjs/browser';
 
 @Component({
@@ -24,6 +23,7 @@ export class ContactComponent implements OnInit {
     });
   }
 
+
   onSubmit() {
     if (this.messageForm.valid) {
       const templateParams = {
@@ -31,6 +31,9 @@ export class ContactComponent implements OnInit {
         email: this.messageForm.value.email,
         message: this.messageForm.value.message
       };
+
+
+
 
       emailjs.send('service_42npztl', 'template_jkn4zsa', templateParams, 'bg_MfpuJFsYLgrqeU')
         .then(() => {
@@ -42,5 +45,6 @@ export class ContactComponent implements OnInit {
           alert('Oops! Something went wrong.');
         });
     }
+
   }
 }
