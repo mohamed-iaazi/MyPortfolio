@@ -9,7 +9,7 @@ import { ProjetsComponent } from './projets/projets.component';
  
 @Component({
   selector: 'app-root',
-  imports: [RouterLink, RouterLinkActive,NavbarComponent,FooterComponent,HomeComponent,AboutComponent,ContactComponent,ProjetsComponent], 
+  imports: [NavbarComponent,FooterComponent,HomeComponent,AboutComponent,ContactComponent,ProjetsComponent], 
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
